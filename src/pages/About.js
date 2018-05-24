@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SocialIcons from './SocialIcons';
+import SocialIcons from '../components/SocialIcons';
 
 class About extends Component {
 	render() {

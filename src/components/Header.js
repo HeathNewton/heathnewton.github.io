@@ -14,9 +14,10 @@ class Header extends Component {
 					<span className="app-title__position">Front-end web developer</span>
 	            </div>
 		          <nav>
-		          	<ul className="nobullets">
-		          		<li><NavLink to="/">Home</NavLink></li>
-		          		<li><NavLink to="/projects">Projects</NavLink></li>
+		          	<ul className="nobullets nobm">
+		          		<li><NavLink exact to="/">Home</NavLink></li>
+		          		<li><NavLink to="/resume">Résumé</NavLink></li>
+		          		<li><NavLink to="/portfolio">Portfolio</NavLink></li>
 		          	</ul>
 		          </nav>
 	          </div>

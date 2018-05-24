@@ -4,7 +4,7 @@ import Icon from './Icon';
 class SocialIcons extends Component {
 	render() {
 	    return (
-	    	<ul className="social-icons nobullets">
+	    	<ul className="social-icons nobullets nobm">
 	    		<li className="social-icons__twitter">
 	    			<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/BrianDMilne">
 						<Icon icon="twitter" title="Twitter feed" />
