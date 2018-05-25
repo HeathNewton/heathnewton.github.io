@@ -5,10 +5,10 @@ class ProjectItem extends Component {
 	render() {
 	    return (
 	    	<li className={"project-item project-item-" + this.props.item}>
-	    		<Link to={"/projects/" + this.props.item}>
+	    		<Link to={"/portfolio/" + this.props.item}>
 	    			<h2>{this.props.title}</h2>
 	    			<div className="project-item__thumbnail">
-	    				<img src={"/assets/images/" + this.props.item + "/landing-t.png"} alt="" />
+	    				<img src={process.env.PUBLIC_URL + "/assets/images/" + this.props.item + "/landing-t.png"} alt="" />
 	    			</div>
 	    			<div className="project-item__dates">
 	    				{this.props.dates}

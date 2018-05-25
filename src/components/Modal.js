@@ -9,9 +9,11 @@ const customStyles = {
 		right			: 'auto',
 		bottom			: 'auto',
 		marginRight		: '-50%',
+		padding			: '1.4375rem',
 		transform		: 'translate(-50%, -50%)',
 		borderRadius	: '0',
 		maxHeight		: '90vh',
+		maxWidth		: '90vw',
 		overflow		: "scroll"
 	}
 };
@@ -40,7 +42,7 @@ class Modal extends Component {
   render() {
     return (
       <div className="screenshot-gallery__item">
-        <button type="button" className="button button__modal-open" onClick={this.openModal}><img src={"/assets/images/" + this.props.project + "/" + this.props.page + "-t.png"} alt="" /><span className="">{this.props.caption}</span></button>
+        <button type="button" className="button button__modal-open" onClick={this.openModal}><img src={process.env.PUBLIC_URL + "/assets/images/" + this.props.project + "/" + this.props.page + "-t.png"} alt="" /><span className="">{this.props.caption}</span></button>
         <ReactModal
 			isOpen={this.state.modalIsOpen}
 			onAfterOpen={this.afterOpenModal}
@@ -49,9 +51,9 @@ class Modal extends Component {
 			contentLabel={this.props.caption}
         >
 
-          <h3>{this.props.caption}</h3>
+          <h3 className="project-modal__caption">{this.props.caption}</h3>
           <button type="button" onClick={this.closeModal} className="button button__icon-only button__close"><Icon icon="delete" title="Close modal" /></button>
-          <img className="project-modal__image" src={"/assets/images/" + this.props.project + "/" + this.props.page + ".png"} alt="" />
+          <img className="project-modal__image" src={process.env.PUBLIC_URL + "/assets/images/" + this.props.project + "/" + this.props.page + ".png"} alt="" />
         </ReactModal>
       </div>
     );

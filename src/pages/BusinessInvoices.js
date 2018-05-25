@@ -15,7 +15,7 @@ class BusinessInvoices extends Component {
 	 				<p>The functionality was built on top of Post's CMS, Drupal 6, and connected to the invoicing system with an API. The interactive parts were built using Angular 1. My task was to build the UX to fit with the site's overall look and feel and make sure the user could get through the process without failing.</p>
 	 				<p>Mainly, I used existing patterns of HTML and CSS, but added to for unique layout needs. I also needed to manipulate Angular code to get the right blocks in the right place at the right time (including the right error messages).</p>
 	 				<h2>Screenshots</h2>
-	    			<div className="screenshot-gallery">
+	    			<div className="screenshot-gallery grid">
 	    				<Modal project={project} page="landing" caption="Business Invoices landing page" />
 	    				<Modal project={project} page="page-01" caption="Adding rows to be able to enter multiple invoices" />
 	    				<Modal project={project} page="page-02" caption="Error if nothing is entered on the landing page" />

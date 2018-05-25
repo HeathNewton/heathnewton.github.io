@@ -259,7 +259,7 @@ nav > ul a.active {
 	display: grid;
 	grid-gap: 1.5rem;
 	justify-content: space-between;
-	align-items: top;
+/*	align-items: top;*/
 	margin-bottom: 1.5rem;
 }
 
@@ -319,9 +319,8 @@ nav > ul a.active {
 }
 
 .screenshot-gallery {
-	display: grid;
 	grid-template-columns: repeat(auto-fit, calc(224/16 * 1rem));
-	grid-gap: 1.5rem;
+	justify-content: start;
 }
 
 .button {
@@ -337,8 +336,8 @@ nav > ul a.active {
 .button__close {
 	padding: 0;
 	position: absolute;
-	top: 1.5rem;
-	right: 1.5rem;
+	top: calc(23/16 * 1rem);
+	right: calc(23/16 * 1rem);
 	width: 1.5rem;
 	height: 1.5rem;
 	font-size: 1.5rem;
@@ -373,7 +372,11 @@ nav > ul a.active {
 	border-color: var(--blue);
 }
 
+.project-modal__caption {
+	padding-right: calc(48/16 * 1rem);
+}
+
 .project-modal__image {
-	max-width: calc(800/16 * 1rem);
+	max-width: calc(1389/16 * 1rem);
 	width: 100%;
 }

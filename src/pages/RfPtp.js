@@ -12,7 +12,7 @@ class RfPtp extends Component {
 	    			<ProjectHeading item={project} title="Rate Finder/Pay-to-Post" org="New Zealand Post" dates="Iteratively from 2013" desc="This functionality allows a user to find a postal rate for a parcel and then pay for and print out the label." />
 	    			<p>(Coming Soon)</p>
 	 				<h2>Screenshot</h2>
-	    			<div className="screenshot-gallery">
+	    			<div className="screenshot-gallery grid">
 	    				<Modal project={project} page="landing" caption="Rate Finder landing page" />
 					</div>
 	    		</div>

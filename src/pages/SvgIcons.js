@@ -15,7 +15,7 @@ class SvgIcons extends Component {
 	 				<p>The SCG icons themselves were used in new projects from the first release, but, of course, there were already a substantial number of pages (both content and application) that used the old font icons. If an area was getting updated the icons themselves would be updated too. When time permitted, some areas had just the icons updated, however this process is still ongoing.</p>
 	 				<p>Since the initial release, new techniques were discovered and developed, such as the ability to assign two colours to an icon - usually manifested as white backgrounds to certain parts of the icon, but the flexibility of SVG meant that these colours could be set in the CSS depending on the need of the particular circumstance.</p>
 	 				<h2>Screenshot</h2>
-	    			<div className="screenshot-gallery">
+	    			<div className="screenshot-gallery grid">
 	    				<Modal project={project} page="landing" caption="SVG icon sprite sheet in the Pattern Library" />
 					</div>
 	    		</div>
