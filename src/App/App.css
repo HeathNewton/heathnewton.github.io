@@ -258,13 +258,12 @@ nav > ul a.active {
 .grid {
 	display: grid;
 	grid-gap: 1.5rem;
-	justify-content: space-between;
-/*	align-items: top;*/
 	margin-bottom: 1.5rem;
 }
 
 .resume-grid {
 	grid-template-columns: repeat(auto-fit, minmax(calc(294/16 * 1rem), 1fr));
+	justify-content: space-between;
 }
 
 .employment-grid {
@@ -283,13 +282,12 @@ nav > ul a.active {
 }
 
 .grid h3,
+.grid h4,
 .grid table {
 	margin: 0 0 0.75rem;
 }
 
 .projects-list {
-	display: grid;
-	grid-gap: 1.5rem;
 	grid-template-columns: repeat(auto-fit, minmax(calc(400/16 * 1rem), 1fr));
 }
 
@@ -320,7 +318,6 @@ nav > ul a.active {
 
 .screenshot-gallery {
 	grid-template-columns: repeat(auto-fit, calc(224/16 * 1rem));
-	justify-content: start;
 }
 
 .button {
