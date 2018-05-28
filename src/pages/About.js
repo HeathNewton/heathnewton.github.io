@@ -7,7 +7,7 @@ class About extends Component {
 	    	<main id="about" role="main" className="main">
 				<div className="main-inner">
 		    		<h1>About me</h1>
-		    		<div className="about-grid">
+		    		<div className="about-grid grid">
 			    		<h2>Where do I live?</h2>
 			    		<p>Wellington, New Zealand</p>
 			    		<h2>What do I do?</h2>
