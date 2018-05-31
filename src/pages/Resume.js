@@ -49,7 +49,7 @@ class Resume extends Component {
 		    			<div className="grid__item">
 				    		<h3>Have worked with</h3>
 				    		<ul className="nobm">
-				    			<li>ES6</li>
+				    			<li>ES6/2015+</li>
 								<li>React</li>
 								<li>ASP.Net</li>
 								<li>XSLT</li>
@@ -57,7 +57,7 @@ class Resume extends Component {
 		    			</div>
 		    		</div>
 		    		<h2>Education / Qualifications</h2>
-		    		<ul className="nobullets">
+		    		<ul className="nobullets quals">
 						<li>1995 | Victoria University of Wellington | Diploma of Library and Information Studies</li>
 						<li>1992 | Victoria University of Wellington | Bachelor of Arts</li>
 					</ul>
@@ -183,7 +183,7 @@ class Resume extends Component {
 		    			</div>
 					</div>
 					<h3>Previous Employment</h3>
-					<ul className="nobullets">
+					<ul className="nobullets prev-employment">
 						<li>September 1997 - July 1999 | Ministry of Commerce | Web Advisor</li>
 						<li>April 1991 - September 1997 | Ministry of Commerce | Acquisitions Librarian</li>
 						<li>August 1986 - April 1991 | Dept of Trade and Industry / Ministry of Commerce | Circulation Assistant</li>
