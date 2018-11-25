@@ -64,6 +64,39 @@ class Resume extends Component {
 					<h2>Employment history</h2>
 					<div className="grid employment-grid">
 		    			<div className="grid__item">
+				    		<h3>The Open Polytechnic of New Zealand</h3>
+				    		<table className="text-table">
+					    		<tbody>
+						    		<tr>
+							    		<th>Start Date:</th>
+							    		<td>July 2018</td>
+						    		</tr>
+						    		<tr>
+							    		<th>End Date:</th>
+							    		<td>November 2018</td>
+						    		</tr>
+						    		<tr>
+							    		<th>Position / Title:</th>
+							    		<td>Software Developer - Fixed-term contract</td>
+						    		</tr>
+					    		</tbody>
+				    		</table>
+				    		<h4>Responsibilities / Achievements</h4>
+				    		<ul className="nobm">
+				    			<li>Project to refresh the Open Polytechnic's website</li>
+				    			<li>Developed new page types and components from supplied designs</li>
+				    			<li>Technologies used:
+				    				<ul>
+				    					<li>Silverstripe</li>
+				    					<li>Foundation 6</li>
+				    					<li>HTML</li>
+				    					<li>SCSS/CSS</li>
+				    					<li>JavaScript (jQuery)</li>
+				    				</ul>
+				    			</li>
+				    		</ul>
+		    			</div>
+		    			<div className="grid__item">
 				    		<h3>New Zealand Post Limited</h3>
 				    		<table className="text-table">
 					    		<tbody>
@@ -73,7 +106,7 @@ class Resume extends Component {
 						    		</tr>
 						    		<tr>
 							    		<th>End Date:</th>
-							    		<td>Currently employed</td>
+							    		<td>July 2018</td>
 						    		</tr>
 						    		<tr>
 							    		<th>Position / Title:</th>
