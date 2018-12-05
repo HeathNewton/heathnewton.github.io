@@ -9,6 +9,7 @@ import {
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
+import OpenPolytechnic from './pages/OpenPolytechnic';
 import BusinessInvoices from './pages/BusinessInvoices';
 import SvgIcons from './pages/SvgIcons';
 import YouShop from './pages/YouShop';
@@ -21,10 +22,10 @@ ReactDOM.render(
 			<Route exact path="/" component={About} />
 			<Route exact path="/resume" component={Resume} />
 			<Route exact path="/portfolio" component={Portfolio} />
+			<Route exact path="/portfolio/open-polytechnic" component={OpenPolytechnic} />
 			<Route exact path="/portfolio/business-invoices" component={BusinessInvoices} />
 			<Route exact path="/portfolio/svg-icons" component={SvgIcons} />
 			<Route exact path="/portfolio/youshop" component={YouShop} />
-			<Route exact path="/portfolio/rf-ptp" component={RfPtp} />
 		</div>
 	</Router>, 
 	document.getElementById('root')

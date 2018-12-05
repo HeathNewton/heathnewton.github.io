@@ -14,7 +14,7 @@ class YouShop extends Component {
 	    			<ul>
 	    				<li>select and deselect parcels to see if consolidation would actually lead to savings</li>
 	    				<li>consolidate and separate parcels easily</li>
-	    				<li>pay for consolidated and non-consolidated parcels over multiple warehouses (YouShhop has two warehouses, US and UK)</li>
+	    				<li>pay for consolidated and non-consolidated parcels over multiple warehouses (YouShop has two warehouses, US and UK)</li>
 	    			</ul>
 	    			<p>The functionality was built on top of Post's CMS, Drupal 6, and connected to Post's systems with APIs. The interactive parts were built using Angular 1, while the static parts were simply Drupal 6 PHP templates. My task was to build the UX to fit with YouShop's overall look and feel and make sure the user could get through the process without failing. This involved editing the template and angular files to output the correct HTML patterns and develop CSS to style it. I used the JavaScript animation library Velocity to handle the animations.</p>
 	    			<p>It should be noted that this functionality was built at a time before the main NZ Post site was converted to a responsive design. The decision was taken not to include YouShop in this conversion due to its complexity.</p>
