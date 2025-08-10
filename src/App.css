@@ -165,8 +165,8 @@ a,
   --link-color: var(--blue);
 }
 
-:is(a, .button__icon-only) {
-  :is(:hover, :focus) {
+:where(a, .button__icon-only) {
+  &:where(:hover, :focus) {
     --link-color: var(--background);
   }
 }
@@ -176,11 +176,12 @@ a,
   color: var(--link-color);
 }
 
-ul:not(.nobullets) {
+ul:not([role="list"]) {
   padding-inline-start: calc(18 / 16 * 1rem);
 }
 
-.nobullets {
+/* bulletless lists */
+[role="list"] {
   list-style: none;
   padding: 0;
 }
@@ -238,7 +239,7 @@ samp {
 
 /* Header */
 
-.header {
+header {
   background-color: var(--background);
   color: var(--text-on-background);
   font-family: "Abel", sans-serif;
@@ -291,7 +292,7 @@ nav {
       font-weight: bold;
       text-transform: uppercase;
       text-decoration: none;
-      :is(:hover, :focus, :active, .active) {
+      &:where(:hover, :focus, :active, .active) {
         --link-color: white;
         text-decoration: underline;
       }
@@ -366,7 +367,7 @@ nav {
     align-items: center;
     grid-gap: 1.5rem;
     margin-block-end: 1.5rem;
-    :is(h2, p) {
+    :where(h2, p) {
       margin: 0;
     }
     h2 {
@@ -416,7 +417,7 @@ nav {
   display: grid;
   grid-gap: 1.5rem;
   margin-block-end: 1.5rem;
-  :is(h3, h4, table) {
+  :where(h3, h4, table) {
     margin: 0 0 0.75rem;
   }
 }
@@ -465,7 +466,7 @@ nav {
     padding: 1.5rem;
     text-align: center;
     block-size: 100%;
-    :is(:hover, :focus) {
+    &:where(:hover, :focus) {
       background-color: var(--blue);
     }
     .project-item__description {
@@ -519,7 +520,7 @@ nav {
   span {
     margin-block-start: 0.75rem;
   }
-  :is(:hover, :focus) {
+  &:where(:hover, :focus) {
     --color: var(--text-on-background);
     background-color: var(--blue);
     border-color: var(--blue);
