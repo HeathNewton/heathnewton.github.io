@@ -3,6 +3,12 @@ import SocialIcon from "./SocialIcon";
 export default function SocialIcons() {
   return (
     <ul className="social-icons nobm" role="list">
+      <li className="social-icons__bluesky">
+        <SocialIcon
+          name="Bluesky"
+          url="bsky.app/profile/briandmilne.bsky.social"
+        />
+      </li>
       <li className="social-icons__twitter">
         <SocialIcon name="X-Twitter" url="x.com/BrianDMilne" />
       </li>
