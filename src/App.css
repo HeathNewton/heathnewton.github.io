@@ -96,6 +96,11 @@
   --h2-fs: 30;
   --h3-fs: 24;
   --h4-fs: 18;
+  /* focus outlines */
+  --focus-color: currentColor;
+  --focus-style: solid;
+  --focus-width: calc(2 / var(--px2rem-base) * var(--px2rem));
+  --focus-offset: calc(2 / var(--px2rem-base) * var(--px2rem));
 }
 *,
 *::before,
@@ -124,6 +129,17 @@ body {
   color: var(--text);
   &.dialog-open {
     overflow-y: hidden;
+  }
+}
+
+:focus {
+  outline: none;
+}
+:focus-visible {
+  transition: all 0.3s ease-in-out;
+  &:focus {
+    outline-offset: var(--focus-offset);
+    outline: var(--focus-color) var(--focus-style) var(--focus-width);
   }
 }
 
@@ -174,7 +190,7 @@ a,
 }
 
 :where(a, .button__icon-only) {
-  &:is(:hover, :focus) {
+  &:is(:hover, :active) {
     --link-color: var(--text);
   }
 }
@@ -255,7 +271,8 @@ header {
 }
 
 .main-inner {
-  padding: calc(24 / var(--px2rem-base) * var(--px2rem)) calc(12 / var(--px2rem-base) * var(--px2rem));
+  padding: calc(24 / var(--px2rem-base) * var(--px2rem))
+    calc(12 / var(--px2rem-base) * var(--px2rem));
 }
 
 .app-title {
@@ -295,7 +312,7 @@ nav {
       font-weight: bold;
       text-transform: uppercase;
       text-decoration: none;
-      &:is(:hover, :focus, :active, .active) {
+      &:is(:hover, :active, .active) {
         --link-color: var(--white);
         text-decoration: underline;
       }
@@ -305,7 +322,9 @@ nav {
 
 @media screen and (width < 49.25em) {
   .header-inner {
-    padding: calc(24 / var(--px2rem-base) * var(--px2rem)) calc(12 / var(--px2rem-base) * var(--px2rem)) calc(12 / var(--px2rem-base) * var(--px2rem));
+    padding: calc(24 / var(--px2rem-base) * var(--px2rem))
+      calc(12 / var(--px2rem-base) * var(--px2rem))
+      calc(12 / var(--px2rem-base) * var(--px2rem));
   }
 
   .app-title {
@@ -320,7 +339,8 @@ nav {
     > ul {
       justify-content: center;
       a {
-        padding: calc(12 / var(--px2rem-base) * var(--px2rem)) calc(24 / var(--px2rem-base) * var(--px2rem));
+        padding: calc(12 / var(--px2rem-base) * var(--px2rem))
+          calc(24 / var(--px2rem-base) * var(--px2rem));
       }
     }
   }
@@ -331,7 +351,9 @@ nav {
     display: grid;
     grid-template-columns: 1fr calc(412 / var(--px2rem-base) * var(--px2rem));
     grid-gap: 0.75rem;
-    padding: calc(24 / var(--px2rem-base) * var(--px2rem)) calc(12 / var(--px2rem-base) * var(--px2rem)) calc(24 / var(--px2rem-base) * var(--px2rem))
+    padding: calc(24 / var(--px2rem-base) * var(--px2rem))
+      calc(12 / var(--px2rem-base) * var(--px2rem))
+      calc(24 / var(--px2rem-base) * var(--px2rem))
       calc(24 / var(--px2rem-base) * var(--px2rem));
     align-items: center;
   }
@@ -421,7 +443,10 @@ nav {
 /* Resume */
 
 .resume-grid {
-  grid-template-columns: repeat(auto-fit, minmax(calc(294 / var(--px2rem-base) * var(--px2rem)), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(294 / var(--px2rem-base) * var(--px2rem)), 1fr)
+  );
   justify-content: space-between;
 }
 
@@ -443,29 +468,38 @@ nav {
 /* Portfolio */
 
 .projects-list {
-  grid-template-columns: repeat(auto-fit, minmax(calc(400 / var(--px2rem-base) * var(--px2rem)), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(400 / var(--px2rem-base) * var(--px2rem)), 1fr)
+  );
 }
 
-.project-item {
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  --link-color: var(--text-on-background);
+  background-color: var(--background);
+  padding: 1.5rem;
+  text-align: center;
+  block-size: 100%;
+  &:where(:hover) {
+    background-color: var(--blue);
+  }
   a {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    --link-color: var(--text-on-background);
-    background-color: var(--background);
+    display: block;
     text-decoration: none;
-    padding: 1.5rem;
-    text-align: center;
-    block-size: 100%;
-    &:where(:hover, :focus) {
+    &:where(:hover, :active) {
       background-color: var(--blue);
-    }
-    .project-item__description {
-      margin-block-start: auto;
+      --link-color: var(--text-on-background);
     }
   }
-  h2 {
+  .portfolio-item__dates,
+  .portfolio-item__description {
     color: var(--text-on-background);
+  }
+  .portfolio-item__description {
+    margin-block-start: auto;
   }
 }
 .back-link {
@@ -477,7 +511,10 @@ nav {
   }
 }
 .screenshot-gallery {
-  grid-template-columns: repeat(auto-fit, calc(224 / var(--px2rem-base) * var(--px2rem)));
+  grid-template-columns: repeat(
+    auto-fit,
+    calc(224 / var(--px2rem-base) * var(--px2rem))
+  );
   dialog {
     border-width: calc(1 / var(--px2rem-base) * var(--px2rem));
     border-color: var(--text-on-background);
@@ -530,7 +567,7 @@ nav {
   span {
     margin-block-start: 0.75rem;
   }
-  &:where(:hover, :focus) {
+  &:where(:hover, :active) {
     --color: var(--text-on-background);
     background-color: var(--blue);
     border-color: var(--blue);
