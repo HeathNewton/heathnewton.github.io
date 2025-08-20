@@ -3,56 +3,65 @@ export default function Resume() {
     <main id="resume">
       <div className="main-inner">
         <h1>Résumé</h1>
-        <h2>Key skills</h2>
+        <h2>Profile</h2>
+        <p>
+          Experienced front-end developer with over 15 years of expertise in
+          building responsive, accessible, and standards-compliant websites.
+          Proven ability to lead development projects, collaborate with
+          cross-functional teams, and deliver high-quality digital solutions.
+          Skilled in modern web technologies, accessibility standards, and
+          content management systems.
+        </p>
+        <h2>Key Strengths</h2>
         <ul>
-          <li>Strong analyst and solver of complex problems</li>
-          <li>Experienced supervisor and technical advisor</li>
-          <li>Successfully manages projects and meets deadlines</li>
-          <li>Excellent team member, relationship builder and collaborator</li>
-          <li>Motivated and achievement-oriented</li>
+          <li>Exceptional stakeholder engagement skills</li>
+          <li>Technical leadership</li>
+          <li>Continuous improvement advocate</li>
+          <li>Meticulous attention to detail</li>
         </ul>
-        <h2>Technical skills</h2>
+        <h2>Technical Skills</h2>
         <div className="grid resume-grid">
           <div className="grid__item">
-            <h3>Excellent</h3>
+            <h3>Languages and Frameworks</h3>
             <ul className="nobm">
               <li>HTML</li>
               <li>CSS</li>
-              <li>Sass/Compass</li>
+              <li>Sass</li>
+              <li>JavaScript (ES6, jQuery)</li>
               <li>SVG</li>
-              <li>
-                Knowledge of the principles of accessibility of web pages
-                (WCAG2)
-              </li>
             </ul>
           </div>
           <div className="grid__item">
-            <h3>Pretty good</h3>
+            <h3>Tools and Platforms</h3>
             <ul className="nobm">
-              <li>JavaScript (jQuery)</li>
               <li>Git</li>
-              <li>Grunt/Gulp/NPM</li>
-              <li>Drupal 6/7</li>
-              <li>Adobe Fireworks</li>
-              <li>Adobe Illustrator</li>
+              <li>Gulp</li>
+              <li>NPM</li>
+              <li>Adobe Illustrator/Photoshop</li>
             </ul>
           </div>
           <div className="grid__item">
-            <h3>Not bad</h3>
+            <h3>CMS Expertise</h3>
             <ul className="nobm">
-              <li>JavaScript (vanilla)</li>
-              <li>Adobe Photoshop</li>
-              <li>Angular 1</li>
+              <li>Drupal</li>
+              <li>Silverstripe</li>
+            </ul>
+          </div>
+          <div className="grid__item">
+            <h3>Accessibility</h3>
+            <ul className="nobm">
+              <li>WCAG 2.2</li>
+              <li>NZ Government Web Standards</li>
+            </ul>
+          </div>
+          <div className="grid__item">
+            <h3>Other</h3>
+            <ul className="nobm">
               <li>PHP</li>
-            </ul>
-          </div>
-          <div className="grid__item">
-            <h3>Have worked with</h3>
-            <ul className="nobm">
-              <li>ES6/2015+</li>
               <li>React</li>
-              <li>ASP.Net</li>
-              <li>XSLT</li>
+              <li>Vue</li>
+              <li>Pattern Libraries</li>
+              <li>Responsive Design</li>
             </ul>
           </div>
         </div>
@@ -66,6 +75,55 @@ export default function Resume() {
         </ul>
         <h2>Employment history</h2>
         <div className="grid employment-grid">
+          <div className="grid__item">
+            <h3>Pikselin Limited</h3>
+            <table className="text-table">
+              <tbody>
+                <tr>
+                  <th>Start Date:</th>
+                  <td>February 2019</td>
+                </tr>
+                <tr>
+                  <th>End Date:</th>
+                  <td>July 2025</td>
+                </tr>
+                <tr>
+                  <th>Position / Title:</th>
+                  <td>Front-End Developer</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Responsibilities / Achievements</h4>
+            <ul className="nobm">
+              <li>
+                Led front-end development for multiple web projects using Drupal
+                and Silverstripe
+              </li>
+              <li>
+                Designed and implemented custom front-end templates with HTML,
+                CSS, and JavaScript
+              </li>
+              <li>
+                Participated in pre-sales and project planning activities,
+                including scope definition, time estimation and risk assessment
+                to support strategic decision making
+              </li>
+              <li>
+                Developed comprehensive Drupal solutions, encompassing site
+                architecture design, custom theming and module configuration to
+                deliver robust and scalable web platforms
+              </li>
+              <li>
+                Conducted accessibility audits and remediations to meet NZ
+                Government standards
+              </li>
+              <li>
+                Built pattern libraries and collaborated with UX designers and
+                project managers
+              </li>
+              <li>Delivered technical documentation and client support</li>
+            </ul>
+          </div>
           <div className="grid__item">
             <h3>The Open Polytechnic of New Zealand</h3>
             <table className="text-table">
@@ -123,29 +181,21 @@ export default function Resume() {
             <h4>Responsibilities / Achievements</h4>
             <ul className="nobm">
               <li>
-                Responsible for the front-end aspect (HTML, CSS, and JavaScript)
-                of the main NZ Post website (www.nzpost.co.nz)
+                Developed and maintained the front-end aspect of NZ Post website
+                (www.nzpost.co.nz)
               </li>
               <li>
-                Developed website applications and tools as part of a wider team
-                (including external vendors)
+                Collaborated within cross-functional teams, including external
+                vendors to design and develop web applications and tools that
+                enhanced user experience and functionality
+              </li>
+              <li>Created a Pattern Library using Atomic Design principles</li>
+              <li>
+                Implemented responsive redesign and developed HTML email
+                templates
               </li>
               <li>
-                Created and maintained a Pattern Library based on Atomic Design
-                principles
-              </li>
-              <li>
-                Implemented responsive redesign of main site over the space of a
-                year
-              </li>
-              <li>Developed an icon system as an SVG sprite</li>
-              <li>
-                Developed templates for HTML emails that work in many different
-                email clients
-              </li>
-              <li>
-                Developed RightNow instances of the National Contact Centre
-                Knowledge Base for internal use and for the CourierPost website
+                Built SVG icon systems and contributed to knowledge base tools
               </li>
             </ul>
           </div>
@@ -170,137 +220,42 @@ export default function Resume() {
             <h4>Responsibilities / Achievements</h4>
             <ul className="nobm">
               <li>
-                The company had a number of clients from the government,
-                non-profit, and commercial sectors
+                Developed websites for government, non-profit, and commercial
+                clients
               </li>
               <li>
-                The company's developers worked in teams on individual projects
+                Specialized in HTML, CSS, JavaScript and accessibility standards
               </li>
               <li>
-                Contributed to the development of client websites, taking design
-                templates and building them in HTML, CSS and JavaScript, with
-                emphasis on web standards accessibility, and progressive
-                enhancement
+                Provided technical guidance, peer reviews, and client support
               </li>
-              <li>Contributed to the maintenance of client websites</li>
+              <li>Gained backend experience in PHP, ASP.NET, and XSLT</li>
               <li>
-                Over time, contributed more and more back-end code in the
-                development of these websites (e.g. PHP, ASP.NET, XSLT)
+                Designed and executed front-end testing plans to ensure
+                compliance with WCAG, NZGWS and best practices in HTML and CSS
               </li>
               <li>
-                Gained working knowledge of a number of Content Management
-                Systems, especially Drupal, Plone and Umbraco
-              </li>
-              <li>Subject Matter Expert for HTML and CSS</li>
-              <li>
-                Advised other developers in HTML and CSS techniques to
-                accomplish their development goals
+                Provided technical guidance to project and account managers,
+                supporting client communications and solution delivery
               </li>
               <li>
-                Became expert on cross-browser issues (especially with Internet
-                Explorer) and techniques to solve them
-              </li>
-              <li>
-                Developed and implemented testing plans for compliance with
-                front-end standards such as WCAG, NZGWS and best practices in
-                HTML and CSS
-              </li>
-              <li>Peer-reviewed other developers' HTML and CSS code</li>
-              <li>
-                Provided technical assistance to project and account managers
-                when liaising with clients
-              </li>
-              <li>
-                Provided technical assistance to account and business managers
-                in the process of responding to RFPs
-              </li>
-            </ul>
-          </div>
-          <div className="grid__item">
-            <h3>Ministry of Economic Development</h3>
-            <table className="text-table">
-              <tbody>
-                <tr>
-                  <th>Start Date:</th>
-                  <td>July 2001</td>
-                </tr>
-                <tr>
-                  <th>End Date:</th>
-                  <td>May 2007</td>
-                </tr>
-                <tr>
-                  <th>Position / Title:</th>
-                  <td>Web Content Administrator</td>
-                </tr>
-              </tbody>
-            </table>
-            <h4>Responsibilities / Achievements</h4>
-            <ul className="nobm">
-              <li>
-                Administered the content of the Ministry's main website, some
-                smaller satellite sites, and of the Ministry's Intranet -
-                publishing documents and maintaining the sites' integrity
-              </li>
-              <li>
-                Contributed to the project to redevelop the front-end and
-                back-end of all the Ministry's websites
-              </li>
-              <li>
-                Contributed to projects to develop new websites as required
-              </li>
-              <li>
-                Helped develop and enforce Ministry standards and New Zealand
-                Government Web Standards and Recommendations compliance for all
-                Ministry websites
-              </li>
-              <li>Administered the registration of Ministry domain names</li>
-              <li>
-                Member of the State Services Commission's Web Guidelines Working
-                Group which developed version 1.0 of the New Zealand Government
-                Web Standards and Recommendations, and, prior to that, a
-                checklist for version 2.1 of the Guidelines
-              </li>
-            </ul>
-          </div>
-          <div className="grid__item">
-            <h3>Ministry of Commerce / Economic Development</h3>
-            <table className="text-table">
-              <tbody>
-                <tr>
-                  <th>Start Date:</th>
-                  <td>July 1999</td>
-                </tr>
-                <tr>
-                  <th>End Date:</th>
-                  <td>July 2001</td>
-                </tr>
-                <tr>
-                  <th>Position / Title:</th>
-                  <td>Internet Specialist</td>
-                </tr>
-              </tbody>
-            </table>
-            <h4>Responsibilities / Achievements</h4>
-            <ul className="nobm">
-              <li>Administered the Ministry's main website</li>
-              <li>
-                Created and administered small satellite websites such as the
-                Ministerial Inquiries into the Electricity Industry and
-                Telecommunications
-              </li>
-              <li>
-                Helped develop and enforce Ministry web management standards for
-                all Ministry websites
-              </li>
-              <li>
-                Oversaw and did the bulk of the conversion of files when the
-                Ministry's website was rebranded due to the change of name
+                Assisted account and business managers in responding to RFPs,
+                offering front-end technical insights and feasibility
+                assessments
               </li>
             </ul>
           </div>
         </div>
         <h3>Previous Employment</h3>
         <ul className="prev-employment" role="list">
+          <li>
+            July 2001 - May 2007 | Ministry of Economic Development | Web
+            Content Administrator
+          </li>
+          <li>
+            July 1999 - July 2001 | Ministry of Commerce/Economic Development |
+            Internet Specialist
+          </li>
           <li>
             September 1997 - July 1999 | Ministry of Commerce | Web Advisor
           </li>

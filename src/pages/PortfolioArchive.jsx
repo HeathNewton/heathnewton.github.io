@@ -11,7 +11,7 @@ export default function PortfolioArchive() {
           <li>
             <PortfolioItem
               item="open-polytechnic"
-              title="Open Polytech Website Refresh"
+              title="Open Polytechnic Website Refresh"
               dates="July 2018 to November 2018"
               desc="The Open Polytechnic wanted to refresh the look and feel of their website."
               isArchive={true}
