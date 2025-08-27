@@ -15,6 +15,9 @@ export default function SocialIcons() {
       <li className="social-icons__instagram">
         <SocialIcon name="Instagram" url="www.instagram.com/heathnewton/" />
       </li>
+      <li className="social-icons__codepen">
+        <SocialIcon name="Codepen" url="codepen.io/heathnewton" />
+      </li>
       <li className="social-icons__github">
         <SocialIcon name="Github" url="github.com/HeathNewton" />
       </li>
