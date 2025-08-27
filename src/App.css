@@ -350,7 +350,7 @@ nav {
   }
 }
 
-@media screen and (width < 49.25em) {
+@media screen and (width < 48em) {
   /* .header-inner {
     padding: calc(24 / var(--px2rem-base) * var(--px2rem))
       calc(12 / var(--px2rem-base) * var(--px2rem))
@@ -376,7 +376,7 @@ nav {
   }
 }
 
-@media screen and (width >= 49.25em) {
+@media screen and (width >= 48em) {
   .header-inner {
     display: grid;
     grid-template-columns: 1fr calc(412 / var(--px2rem-base) * var(--px2rem));
@@ -483,7 +483,7 @@ nav {
   grid-template-columns: 1fr;
 }
 
-@media screen and (min-width: 62.25em) {
+@media screen and (width >= 62.25em) {
   .employment-grid {
     grid-template-columns: 1fr 1fr;
   }
