@@ -1,6 +1,6 @@
 export default function Resume() {
   return (
-    <main id="resume">
+    <main id="resume" className="content-grid">
       <div className="main-inner">
         <h1>Résumé</h1>
         <h2>Profile</h2>

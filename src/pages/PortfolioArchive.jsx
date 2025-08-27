@@ -3,7 +3,7 @@ import PortfolioItem from "../components/PorfolioItem";
 
 export default function PortfolioArchive() {
   return (
-    <main id="portfolio-archive">
+    <main id="portfolio-archive" className="content-grid">
       <div className="main-inner">
         <h1>Portfolio / Archive</h1>
         <p>Here are some of the projects I contributed to from 2014 to 2018</p>

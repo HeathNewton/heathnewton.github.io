@@ -5,7 +5,7 @@ const project = "business-invoices";
 
 export default function BusinessInvoices() {
   return (
-    <main id={`project-${project}`} className="project">
+    <main id={`project-${project}`} className="project content-grid">
       <div className="main-inner">
         <PortfolioItemHeading
           item={project}

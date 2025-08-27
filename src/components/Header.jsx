@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header>
+    <header className="content-grid">
       <div className="header-inner">
         <div className="app-title">
           <span className="app-title__name">Brian Milne</span>

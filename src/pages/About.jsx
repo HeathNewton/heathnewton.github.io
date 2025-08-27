@@ -2,7 +2,7 @@ import SocialIcons from "../components/SocialIcons";
 
 export default function About() {
   return (
-    <main id="about">
+    <main id="about" className="content-grid">
       <div className="main-inner">
         <h1>About me</h1>
         <div className="about-grid">

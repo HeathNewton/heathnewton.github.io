@@ -5,7 +5,7 @@ const project = "youshop";
 
 export default function YouShop() {
   return (
-    <main id={`project-${project}`} className="project">
+    <main id={`project-${project}`} className="project content-grid">
       <div className="main-inner">
         <PortfolioItemHeading
           item={project}
